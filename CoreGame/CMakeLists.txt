@@ -20,9 +20,9 @@ elseif(MSVC)
 endif()
 
 if (MSVC)
-  set(BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}\\dist\\${PLATFORM}\\${ARCH}\\${CMAKE_BUILD_TYPE}")
+  set(BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}\\dist\\${PLATFORM}\\${ARCH}\\")
 else()
-  set(BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dist/${PLATFORM}/${ARCH}/${CMAKE_BUILD_TYPE}")
+  set(BUILD_DIR "${CMAKE_CURRENT_SOURCE_DIR}/dist/${PLATFORM}/${ARCH}/")
 endif()
 
 add_subdirectory(godot-cpp)
