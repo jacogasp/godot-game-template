@@ -54,7 +54,7 @@ jobs:
         shell: bash
         working-directory: CoreGame/dist/.cmake
         run: |
-          cmake --build . -j8 -DCMAKE_BUILD_TYPE=$BUILD_TYPE
+          cmake --build . -j8 --config $BUILD_TYPE
       - name: Prepare Artifacts
         shell: bash
         working-directory: CoreGame/dist
