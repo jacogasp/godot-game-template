@@ -28,7 +28,7 @@ and configure with
 
 ```bash
 cd .cmake
-cmake ..
+cmake ../       # -DARCH=arm64 to specify build directory
 ```
 
 ## Build
